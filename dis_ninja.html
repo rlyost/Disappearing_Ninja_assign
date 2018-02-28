@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Rick Yost
+28 Feb 2018
+Dissappearing Ninja Assignment -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dissappearing Ninja</title>
+<!-- 	<link rel="stylesheet" type="text/css" href=""> -->
+	<style>
+		.image {
+			width: 250px;
+			display: inline-block;
+		}
+		.restore {
+			width: 100px;
+			margin: 0 auto;
+			text-align: center;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('img').click(function(){
+                $(this).hide();
+            });
+            $("button").click(function(){
+            	$('img').show();
+            });
+		});
+	</script>
+</head>
+<body>
+	<div></div>
+	<img src="images.png" alt="ninja" class="image">
+	<img src="1ninja.png" alt="ninja" class="image">	
+	<img src="Ninja-Shadow.jpg" alt="ninja" class="image">
+	<img src="Ninja-Turtle.png" alt="ninja" class="image">
+	<img src="images.png" alt="ninja" class="image">
+	<img src="1ninja.png" alt="ninja" class="image">
+	<img src="Ninja-Shadow.jpg" alt="ninja" class="image">
+	<img src="Ninja-Turtle.png" alt="ninja" class="image">
+	<button class="restore">RESTORE</button>
+</body>
+</html>
